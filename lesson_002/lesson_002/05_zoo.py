@@ -14,12 +14,12 @@ print(zoo)
 # добавьте птиц из списка birds в последние клетки зоопарка
 birds = ['rooster', 'ostrich', 'lark', ]
 #  и выведите список на консоль
-zoo.extend(birds)
+zoo += birds
 print(zoo)
 
 # уберите слона
 #  и выведите список на консоль
-zoo.remove('elephant')
+del zoo[3]
 print(zoo)
 
 # выведите на консоль в какой клетке сидит лев (lion) и жаворонок (lark).
@@ -27,4 +27,4 @@ print(zoo)
 print(zoo.index('lion'))
 print(zoo.index('lark'))
 #6 task completed
-
+#TODO объясни, как вместо индекса посчитать номер
