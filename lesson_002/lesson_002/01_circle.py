@@ -30,7 +30,7 @@ point = (23, 34)
 point_x = point[0]
 point_y = point[1]
 point_len = point_x * point_y * 0.5
-print(point_len < radius)
+print(point_len < s_circle)
 
 # Аналогично для другой точки
 point_2 = (30, 30)
@@ -40,7 +40,7 @@ point_2 = (30, 30)
 point_2_x = point[0]
 point_2_y = point[1]
 point_2_len = point_2_x * point_2_y * 0.5
-print(point_2_len < radius)
+print(point_2_len < s_circle)
 
 # Пример вывода на консоль:
 #
@@ -49,3 +49,4 @@ print(point_2_len < radius)
 # False
 
 #2 task completed
+#В телеге написал почему я использовал радиус 42
