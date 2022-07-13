@@ -26,10 +26,8 @@ violator_songs_list = [
 
 songs_1 = violator_songs_list
 songs_sum = songs_1[3] + songs_1[5] + songs_1[8]
-print(songs_sum)
 sum = songs_sum[1] + songs_sum[3] + songs_sum[5]
-print(sum)
-print("Три песни звучат ", round(sum), "минут")     # TODO: выведи в формате "xx.YY" (т.е. с точностью до сотых)
+print("Три песни звучат ", round(sum, 2), "минут")
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
@@ -49,8 +47,8 @@ violator_songs_dict = {
 
 songs_2 = violator_songs_dict
 songs_sum_2 = songs_2['Sweetest Perfection'] + songs_2['Policy of Truth'] + songs_2['Blue Dress']
-print(songs_sum_2)
-#print("А другие три песни звучат ", round(songs_sum_2), "минут")
+total = songs_sum_2
+print(f'А другие три песни звучат {total} минут')
 # TODO: повтори здесь принт выше, но используй f-строку.
 
 #9 task completed
