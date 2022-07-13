@@ -123,13 +123,64 @@ chairs_cost_3 = chairs_quantity_3 * chairs_price_3
 print('Стул(3) -', chairs_quantity_3, 'шт, стоимость', chairs_cost_3, 'руб')
 print('------------------------------')
 
+lamp_code = goods['Лампа']
+lamps_item = store[lamp_code][0]
+lamps_quantity = lamps_item['quantity']
+lamps_price = lamps_item['price']
+lamps_cost = lamps_quantity * lamps_price
+print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+print('------------------------------')
 
-# TODO: добавь итоговый вывод сколько всего ламп, сколько всего стульев...
-#  Формат вывода:
-# 	Лампа - 27 шт, стоимость 1134
-# 	Стол - xxx шт, стоимость xxx
-# 	Диван - xxx шт, стоимость xxx
-# 	Стул - xxx шт, стоимость xxx
+table_code = goods['Стол']
+table_code_2 = goods['Стол']
+tables_item = store[table_code][0]
+tables_item_2 = store[table_code_2][1]
+tables_quantity = tables_item['quantity']
+tables_quantity_2 = tables_item_2['quantity']
+tables_price = tables_item['price']
+tables_price_2 = tables_item_2['price']
+tables_cost = tables_quantity * tables_price
+tables_cost_2 = tables_quantity_2 * tables_price_2
+quantity_tables = tables_quantity + tables_quantity_2
+tables_sum = tables_cost + tables_cost_2
+print('Стол -', quantity_tables, 'шт, стоимость', tables_sum, 'руб')
+print('------------------------------')
+
+sofa_code = goods['Диван']
+sofa_code_2 = goods['Диван']
+sofas_item = store[sofa_code][0]
+sofas_item_2 = store[sofa_code_2][1]
+sofas_quantity = sofas_item['quantity']
+sofas_quantity_2 = sofas_item_2['quantity']
+sofas_price = sofas_item['price']
+sofas_price_2 = sofas_item_2['price']
+sofas_cost = sofas_quantity * sofas_price
+sofas_cost_2 = sofas_quantity_2 * sofas_price_2
+quantity_sofas = sofas_quantity + sofas_quantity_2
+sofas_sum = sofas_cost + sofas_cost_2
+print('Диван -', quantity_sofas, 'шт, стоимость', sofas_sum, 'руб')
+print('------------------------------')
+
+chair_code = goods['Стул']
+chair_code_2 = goods['Стул']
+chair_code_3 = goods['Стул']
+chairs_item = store[chair_code][0]
+chairs_item_2 = store[chair_code_2][1]
+chairs_item_3 = store[chair_code_3][2]
+chairs_quantity = chairs_item['quantity']
+chairs_quantity_2 = chairs_item_2['quantity']
+chairs_quantity_3 = chairs_item_3['quantity']
+chairs_price = chairs_item['price']
+chairs_price_2 = chairs_item_2['price']
+chairs_price_3 = chairs_item_3['price']
+chairs_cost = chairs_quantity * chairs_price
+chairs_cost_2 = chairs_quantity_2 * chairs_price_2
+chairs_cost_3 = chairs_quantity_3 * chairs_price_3
+quantity_chairs = chairs_quantity + chairs_quantity_2 + chairs_quantity_3
+chairs_sum = chairs_cost + chairs_cost_2 + chairs_cost_3
+print('Стул -', quantity_chairs, 'шт, стоимость', chairs_sum, 'руб')
+print('------------------------------')
+
 
 # Вывести стоимость каждого товара на складе: один раз распечать сколько всего столов, стульев и т.д. на складе
 # Формат строки <товар> - <кол-во> шт, стоимость <общая стоимость> руб
@@ -137,7 +188,6 @@ print('------------------------------')
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
-# TODO здесь ваш код
 
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
