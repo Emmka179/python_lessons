@@ -47,10 +47,9 @@ violator_songs_dict = {
 
 songs_2 = violator_songs_dict
 # TODO: можешь сразу назвать переменную total. Или используй внутри print'а переменную songs_sum_2
-songs_sum_2 = songs_2['Sweetest Perfection'] + songs_2['Policy of Truth'] + songs_2['Blue Dress']
-total = songs_sum_2
+total = songs_2['Sweetest Perfection'] + songs_2['Policy of Truth'] + songs_2['Blue Dress']
 # TODO: верни округление: внутри {.....} можно не только переменные подставлять, то вызывать функции и другие операции.
 #  Пример:
 #       print(f'{2 + 2 * 100} = 202')
-print(f'А другие три песни звучат {total} минут')
+print(f'А другие три песни звучат {round(total, 2)} минут')
 
