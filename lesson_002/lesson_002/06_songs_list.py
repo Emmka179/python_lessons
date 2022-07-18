@@ -53,3 +53,4 @@ total = songs_2['Sweetest Perfection'] + songs_2['Policy of Truth'] + songs_2['B
 #       print(f'{2 + 2 * 100} = 202')
 print(f'А другие три песни звучат {round(total, 2)} минут')
 
+# зачет!
