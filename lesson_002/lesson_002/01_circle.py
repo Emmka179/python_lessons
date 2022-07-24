@@ -32,7 +32,7 @@ point = (23, 34)
 
 point_len_1 = ((point[0] - 0) ** 2 + (point[1] - 0) ** 2) ** .5
 # print(point_len_1)
-print(point_len_1 < s_circle)
+print(point_len_1 < radius)
 
 # Аналогично для другой точки
 point_2 = (0, 43)
@@ -44,7 +44,7 @@ point_2 = (0, 43)
 # TODO: расстояние теперь правильно считается 👍 (и выше тоже)
 point_2_len = ((point_2[0] - 0) ** 2 + (point_2[1] - 0) ** 2) ** .5
 # print(point_2_len)
-print(point_2_len < s_circle)
+print(point_2_len < radius)
 
 # Пример вывода на консоль:
 #
