@@ -10,5 +10,19 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
+difference = expenses - educational_grant
+monthes = 1
+print(f'В этом месяце расход составил {expenses} рублей')
+summ = expenses
+while monthes < 10:
+    monthes += 1
+    percent = expenses / 100 * 3
+    expenses += round(percent)
+    summ = summ + expenses
+    print('В этом месяце расход составил {} рублей'.format(expenses))
+print(f'Студенту надо попросить {summ - educational_grant * 10} рублей')
 
-# TODO здесь ваш код
+
+#Код писал полностью сам за исключением переменной summ, ее увидел в инете (там совершенно другой код был) и добавил
+#Без нее результат не получается
+#Если считать точно, то получится 37567, а у меня выходит 37565 из-за функции round, поэтому небольшая погрешность
