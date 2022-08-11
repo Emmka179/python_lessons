@@ -57,6 +57,10 @@ brick_x, brick_y, brick_z = 11, 10, 2
 # brick_x, brick_y, brick_z = 3, 11, 6
 # (просто раскоментировать нужную строку и проверить свой код)
 
+# TODO: какой результат выдаст для случая:
+#           brick_x, brick_y, brick_z = 7, 100, 7
+#  .
+#  p.s. кирпич можно вращать!)
 if brick_x > hole_x or brick_y > hole_y:
     print('НЕТ')
 else:
